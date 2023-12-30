@@ -9,5 +9,5 @@ public class HomePage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+	@FindBy(linkText="Register")
 }
