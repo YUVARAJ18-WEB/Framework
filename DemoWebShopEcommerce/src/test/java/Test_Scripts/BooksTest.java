@@ -12,6 +12,7 @@ import ObjectRepository.HomePage;
 
 public class BooksTest extends BaseClass {
 
+	//Select Option in the first Dropdown
 	@Test
 	public void booksTest_001() throws Exception {
 
@@ -30,6 +31,7 @@ public class BooksTest extends BaseClass {
 		Thread.sleep(2000);
 	}
 
+	//Select Option in the second Dropdown
 	@Test
 	public void booksTest_002() throws Exception {
 
@@ -45,6 +47,7 @@ public class BooksTest extends BaseClass {
 
 	}
 
+	//Select Option in the Third Dropdown
 	@Test
 	public void booksTest_003() throws Exception {
 
@@ -59,7 +62,7 @@ public class BooksTest extends BaseClass {
 		Thread.sleep(2000);
 
 	}
-	
+	//Verify page Heading
 	@Test
 	
 	public void verifyBookPage() {
