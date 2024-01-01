@@ -29,7 +29,7 @@ public class Report {
 		
 		dr.findElement(By.id("Email")).sendKeys("gilchrist@gmail.com");
 		
-		dr.findElement(By.id("password")).sendKeys("Yuvi@18");
+		dr.findElement(By.id("Password")).sendKeys("Yuvi@18");
 		
 		dr.findElement(By.cssSelector("[value='Log in']")).click();
 		
@@ -57,7 +57,7 @@ public class Report {
 		
 		dr.findElement(By.id("Email")).sendKeys("gilchrist@gmail.com");
 		
-		dr.findElement(By.id("password")).sendKeys("Yuvi@18");
+		dr.findElement(By.id("Password")).sendKeys("Yuvi@18");
 		
 		dr.findElement(By.cssSelector("[value='Log in']")).click();
 		
