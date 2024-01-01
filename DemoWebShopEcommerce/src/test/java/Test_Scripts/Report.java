@@ -13,7 +13,8 @@ import com.relevantcodes.extentreports.LogStatus;
 public class Report {
 	ExtentReports report = new ExtentReports("./Reports/report.html");
 	ExtentTest test = report.startTest("loginTest");
-	
+
+	//Verify log out Link is displayed or not
 	@Test 
 	public void reportTest() {
 		
@@ -41,7 +42,8 @@ public class Report {
 		
 		dr.quit();
 	}
-	
+
+	//Verify log out Link is displayed or not and intensionally fail the script
 	@Test 
 	public void reportTest2() {
 		
