@@ -1,5 +1,6 @@
 package Generic_Library;
 
+import java.lang.reflect.Method;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.relevantcodes.extentreports.ExtentReports;
+
 public class BaseClass extends WebDriverUtility{
 
 	public WebDriver dr;
@@ -23,12 +26,15 @@ public class BaseClass extends WebDriverUtility{
 	@BeforeSuite
 	public void beforeSuite() {
 		
+		report=new ExtentReports(REPORT_PATH);
 		
 		Reporter.log("Connect to Database", true);
 	}
 	
 	@AfterSuite
 	public void afterSuite() {
+		
+		report.flush();
 		
 		Reporter.log("Close Connection to Database", true);
 	}
@@ -78,13 +84,22 @@ public class BaseClass extends WebDriverUtility{
 	}
 	
 	@BeforeMethod
-	public void beforeMethod() {
+	public void beforeMethod(Method method) {
 		
 		Reporter.log("Log in", true);
+		
+		String methhodName=method.getName();
+		
+		test=report.startTest(methhodName);
+		
 	}
 	
 	@AfterMethod
 	public void afterMethod() {
+		
 		Reporter.log("Log out", true);
+	
+		report.endTest(test);
+	
 	}
 }

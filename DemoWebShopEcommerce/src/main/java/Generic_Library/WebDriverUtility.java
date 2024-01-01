@@ -14,6 +14,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 /**
  * This method created for all reusable methods
  * 
@@ -23,8 +26,8 @@ public class WebDriverUtility implements FrameworkConstants {
 
 	public static Actions action;
 	public static JavascriptExecutor je;
-	
-	
+	public static ExtentReports report;
+	public static ExtentTest test;
 	
 	// select options by using index
 	public static void selectOptionsByIndex(WebElement dropdown, int index) {
@@ -120,11 +123,14 @@ public class WebDriverUtility implements FrameworkConstants {
 	 * This method is created for to take screenshot of webPage
 	 */
 
-	public static void getScreenshotOfWebPage(WebDriver dr) {
+	public static String getScreenshotOfWebPage(WebDriver dr) {
 
 		TakesScreenshot ts = (TakesScreenshot) dr;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		File perm = new File(SCREENSHOT_PATH + getSystemDate() + ".png");
+		
+		String imagePath = SCREENSHOT_PATH + getSystemDate() + ".png";
+		
+		File perm = new File(imagePath);
 
 		try {
 			FileHandler.copy(temp, perm);
@@ -132,16 +138,20 @@ public class WebDriverUtility implements FrameworkConstants {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return "."+imagePath;
 	}
 
 	/**
 	 * This method is created for to take screenshot of webElement
 	 */
 
-	public static void getScreenshotOfWebElement(WebElement element) {
+	public static String getScreenshotOfWebElement(WebElement element) {
 
 		File temp = element.getScreenshotAs(OutputType.FILE);
-		File perm = new File(SCREENSHOT_PATH + getSystemDate() + ".png");
+		
+		String imagePath = SCREENSHOT_PATH + getSystemDate() + ".png";
+		
+		File perm = new File(imagePath);
 
 		try {
 			FileHandler.copy(temp, perm);
@@ -149,6 +159,7 @@ public class WebDriverUtility implements FrameworkConstants {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return "."+imagePath;
 	}
 
 	// methods to handle alert
