@@ -14,7 +14,7 @@ public class Report {
 	ExtentReports report = new ExtentReports("./Reports/report.html");
 	ExtentTest test = report.startTest("loginTest");
 
-	//Verify log out Link is displayed or not
+	//Verify log out Link is displayed or not and check whether the testcase is pass or fail 
 	@Test 
 	public void reportTest() {
 		
@@ -71,5 +71,4 @@ public class Report {
 		
 		dr.quit();
 	}
-	
 }
