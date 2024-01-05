@@ -3,6 +3,8 @@ package Test_Scripts;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import Generic_Library.BaseClass;
 import ObjectRepository.HomePage;
 import ObjectRepository.JewelryPage;
@@ -23,6 +25,8 @@ public class JewelryTest extends BaseClass {
 		
 		//Take Screenshot of webElement
 		getScreenshotOfWebElement(jp.getBlackAndWhiteDiamondHeartImage());
+		
+		test.log(LogStatus.PASS, "DiamondHeartImage");
 		
 		String str="ScreenShot Taken";
 		

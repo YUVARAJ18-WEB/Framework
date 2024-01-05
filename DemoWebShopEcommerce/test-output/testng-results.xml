@@ -1,110 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Connect to Database]]>
-    </line>
-    <line>
-      <![CDATA[Before Test]]>
-    </line>
-    <line>
-      <![CDATA[Before Class]]>
-    </line>
-    <line>
-      <![CDATA[Log in]]>
-    </line>
-    <line>
-      <![CDATA[ScreenShot Taken]]>
-    </line>
-    <line>
-      <![CDATA[Log out]]>
-    </line>
-    <line>
-      <![CDATA[After Class]]>
-    </line>
-    <line>
-      <![CDATA[After Test]]>
-    </line>
-    <line>
-      <![CDATA[Close Connection to Database]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-01-01T17:07:39 IST" name="Default suite" finished-at="2024-01-01T17:07:49 IST" duration-ms="9812">
+  <suite started-at="2024-01-05T19:38:20 IST" name="Default suite" finished-at="2024-01-05T19:38:47 IST" duration-ms="27871">
     <groups>
     </groups>
-    <test started-at="2024-01-01T17:07:39 IST" name="Default test" finished-at="2024-01-01T17:07:49 IST" duration-ms="9812">
-      <class name="Test_Scripts.JewelryTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:39 IST" name="beforeSuite" finished-at="2024-01-01T17:07:39 IST" duration-ms="181" status="PASS">
+    <test started-at="2024-01-05T19:38:20 IST" name="Default test" finished-at="2024-01-05T19:38:47 IST" duration-ms="27871">
+      <class name="Test_Scripts.Report">
+        <test-method signature="reportTest()[pri:0, instance:Test_Scripts.Report@41488b16]" started-at="2024-01-05T19:38:20 IST" name="reportTest" finished-at="2024-01-05T19:38:34 IST" duration-ms="14665" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Connect to Database]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:39 IST" name="beforetest" finished-at="2024-01-01T17:07:39 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- reportTest -->
+        <test-method signature="reportTest2()[pri:0, instance:Test_Scripts.Report@41488b16]" started-at="2024-01-05T19:38:34 IST" name="reportTest2" finished-at="2024-01-05T19:38:47 IST" duration-ms="13101" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Before Test]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:39 IST" name="beforeClass" finished-at="2024-01-01T17:07:47 IST" duration-ms="7823" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Class]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:47 IST" name="beforeMethod" finished-at="2024-01-01T17:07:47 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Test_Scripts.JewelryTest.DiamondHeartTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Log in]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="DiamondHeartTest()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:47 IST" name="DiamondHeartTest" finished-at="2024-01-01T17:07:49 IST" duration-ms="1776" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ScreenShot Taken]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DiamondHeartTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:49 IST" name="afterMethod" finished-at="2024-01-01T17:07:49 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Log out]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:49 IST" name="afterClass" finished-at="2024-01-01T17:07:49 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After Class]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:49 IST" name="aftertest" finished-at="2024-01-01T17:07:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After Test]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- aftertest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Test_Scripts.JewelryTest@2e3967ea]" started-at="2024-01-01T17:07:49 IST" name="afterSuite" finished-at="2024-01-01T17:07:50 IST" duration-ms="232" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Close Connection to Database]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- Test_Scripts.JewelryTest -->
+        </test-method> <!-- reportTest2 -->
+      </class> <!-- Test_Scripts.Report -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
