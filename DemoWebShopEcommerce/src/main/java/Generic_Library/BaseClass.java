@@ -19,6 +19,8 @@ import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
+import ObjectRepository.LoginPage;
+
 public class BaseClass extends WebDriverUtility{
 
 	public WebDriver dr;
@@ -88,6 +90,9 @@ public class BaseClass extends WebDriverUtility{
 		
 		Reporter.log("Log in", true);
 		
+		LoginPage lp = new LoginPage(dr);
+		lp.login(dr);
+		
 		String methhodName=method.getName();
 		
 		test=report.startTest(methhodName);
@@ -99,6 +104,9 @@ public class BaseClass extends WebDriverUtility{
 		
 		Reporter.log("Log out", true);
 	
+		LoginPage lp = new LoginPage(dr);
+		lp.logout(dr);
+		
 		report.endTest(test);
 	
 	}

@@ -3,11 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Scripts.Report">
+      <class name="Test_Scripts.BooksTest">
         <methods>
-          <include name="reportTest2"/>
+          <include name="afterSuite"/>
+          <include name="booksTest_002"/>
+          <include name="beforeClass"/>
+          <include name="beforetest"/>
+          <include name="beforeMethod"/>
+          <include name="aftertest"/>
+          <include name="afterClass"/>
+          <include name="verifyBookPage"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="booksTest_003"/>
         </methods>
-      </class> <!-- Test_Scripts.Report -->
+      </class> <!-- Test_Scripts.BooksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
